@@ -41,6 +41,7 @@ movie-card-list/
 ---
 
 ## 📸 Screenshot
+[Movie Card List](Screenshot.png)
 
 
 ---
