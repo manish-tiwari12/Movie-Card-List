@@ -41,14 +41,14 @@ movie-card-list/
 ---
 
 ## 📸 Screenshot
-[Movie Card List](Screenshot.png)
+![Movie Card List](Screenshot.png)
 
 
 ---
 
 ## ✍️ Author
-
-- MAnish Tiwari 
+-- Manish Tiwari
+-- GitHub Profile
 
 ---
 
