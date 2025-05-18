@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-film"></i>
+                MovieHub
+            </a>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Popular Movies</h1>
+        <div class="movie-grid">
+            <!-- Bollywood Movies -->
+            <div class="movie-card" data-movie-id="1">
+                <div class="movie-image">
+                    <img src="images/rrr.jpg" alt="RRR Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>RRR</h3>
+                    <p class="movie-year">2022</p>
+                    <p class="movie-genre">Action, Drama</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.8</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card" data-movie-id="2">
+                <div class="movie-image">
+                    <img src="images/javan.jpeg" alt="Jawan Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Jawan</h3>
+                    <p class="movie-year">2023</p>
+                    <p class="movie-genre">Action, Thriller</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- South Indian Movies -->
+            <div class="movie-card" data-movie-id="3">
+                <div class="movie-image">
+                    <img src="images/ponniyini.jpeg" alt="Ponniyin Selvan Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Ponniyin Selvan</h3>
+                    <p class="movie-year">2022</p>
+                    <p class="movie-genre">Historical, Drama</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card" data-movie-id="4">
+                <div class="movie-image">
+                    <img src="images/kgf.jpeg" alt="KGF Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>KGF: Chapter 2</h3>
+                    <p class="movie-year">2022</p>
+                    <p class="movie-genre">Action, Drama</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.7</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Movies (Initially Hidden) -->
+            <div class="movie-card hidden" data-movie-id="5">
+                <div class="movie-image">
+                    <img src="images/puspa.jpeg" alt="Pushpa Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Pushpa: The Rise</h3>
+                    <p class="movie-year">2021</p>
+                    <p class="movie-genre">Action, Crime</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card hidden" data-movie-id="6">
+                <div class="movie-image">
+                    <img src="images/kantara.jpeg" alt="Kantara Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Kantara</h3>
+                    <p class="movie-year">2022</p>
+                    <p class="movie-genre">Action, Drama</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.9</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add these movie cards after the existing ones -->
+            <div class="movie-card hidden" data-movie-id="7">
+                <div class="movie-image">
+                    <img src="images/pathan.jpeg" alt="Pathaan Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Pathaan</h3>
+                    <p class="movie-year">2023</p>
+                    <p class="movie-genre">Action, Thriller</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.4</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card hidden" data-movie-id="8">
+                <div class="movie-image">
+                    <img src="images/vikram.jpeg" alt="Vikram Movie Poster">
+                    <div class="movie-overlay">
+                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Vikram</h3>
+                    <p class="movie-year">2022</p>
+                    <p class="movie-genre">Action, Thriller</p>
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span>8.6</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more movie cards here -->
+        </div>
+
+        <div class="load-more-container">
+            <button class="load-more-btn">Load More Movies</button>
+        </div>
+    </div>
+
+    <!-- Add Categories Section -->
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="category-list">
+            <a href="#" class="category-item">Action</a>
+            <a href="#" class="category-item">Comedy</a>
+            <a href="#" class="category-item">Drama</a>
+            <a href="#" class="category-item">Horror</a>
+            <a href="#" class="category-item">Sci-Fi</a>
+        </div>
+    </section>
+
+    <!-- Movie Details Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Movie Poster">
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title"></h2>
+                    <div class="modal-meta">
+                        <span class="modal-year"></span>
+                        <span class="modal-genre"></span>
+                        <div class="modal-rating"></div>
+                    </div>
+                    <div class="modal-description"></div>
+                    <div class="modal-cast">
+                        <h3>Cast</h3>
+                        <p class="cast-list"></p>
+                    </div>
+                    <div class="modal-director">
+                        <h3>Director</h3>
+                        <p class="director-name"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>MovieHub</h3>
+                <p>Your ultimate destination for movie information and reviews.</p>
+                <p>Creat By Manish Tiwari </p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Sci-Fi</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MovieHub. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
